@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>    
+  <body>
+    <span>{args.count}</span>
+    <span>{args.mass}</span>
+  <div>
+    <span>space is {args.a1} of </span>
+    <span>azazaza is {args.a1} of </span>
+  </div>
+  <div>
+    <div><span>current is {args.col}columns</span></div>
+    <div><span>{args.num}</span></div>
+  </div>
+    <script>               
+      const args = {
+        count: 100,
+        mass: 50,
+        a1: "azazaza",
+        a2: "space",
+        col: 10,
+        num: 20
+        };
+ function countTags(n) { 
+ var childNodes = document.body.childNodes;
+    for (var i = 0; i < childNodes.length; i++) {
+      if (childNodes[i].nodeType == 1) {   
+      alert( childNodes[i].innerHTML );
+      }
+    }
+ }
+  window.addEventListener("DOMContentLoaded",countTags());
+  </script>
+  </body>
+</html>
